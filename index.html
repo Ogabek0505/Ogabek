@@ -1,0 +1,177 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{% static 'style.css' %}">
+	<title>Document</title>
+</head>
+
+<body>
+	<a href="#" class="viewport-contact"><img src="{% static 'images/body-contact.png' %}" alt="contact"><br><span>Bosing</span></a>
+	<header>
+		<div class="container">
+			<div class="navbar">
+				<div class="logo">
+					<img src="images/navbar-logo.png" alt="">
+				</div>
+				<div class="navbar-language__items">
+					<button class="navbar-language__uz">UZ</button>
+					<span>|</span>
+					<button class="navbar-language__ru">RU</button>
+					<button class="navbar-profil__button" ><i class="fa-solid fa-user"></i><a href="register/login"> Hisobingiz</a></button>
+					<button class="navbar-ads__button">E'lon berish</button>
+				</div>
+			</div>
+		</div>
+	</header>
+<!-- filter start -->
+	<section class="filter">
+		<div class="container">
+			<div class="filter-items">
+				<div class="filter-title">
+					<h1>
+						<i class="fas fa-filter"></i>Filtrlar
+					</h1>
+				</div>
+			</div>
+			<div class="filter-options">
+				<form action="" class="filter-options__items">
+					<div class="filter-options__item" style="margin-left: 0;">
+						<label for="turkum">Turkum</label>
+						<br>
+						<select name="turkum" id="turkum">
+							<option value="1">Kvartira</option>
+							<option value="2">Xonadon</option>
+						</select>
+					</div>
+
+					<div class="filter-options__item">
+						<label for="tumanlar">Tumanlar</label>
+						<br>
+						<select name="tumanlar" id="tumanlar">
+							<option value="1">Chilonzor</option>
+							<option value="2">Sergili</option>
+							<option value="3">Sergili</option>
+							<option value="4">Yunusobod</option>
+							<option value="5">chirchiq</option>
+							<option value="5">olmazor</option>
+						</select>
+					</div>
+
+					<div class="filter-options__item">
+						<label for="narx">Narx:</label>
+						<br>
+						<input type="number" placeholder="dan">
+						<input type="number" placeholder="gacha">
+					</div>
+
+					<div class="filter-options__item">
+						<label for="xonalar">xonalar soni:</label>
+						<br>
+						<input type="number" placeholder="dan">
+						<input type="number" placeholder="gacha">
+					</div>
+
+					<div class="filter-options__item">
+						<label for="qavati">qavati:</label>
+						<br>
+						<input type="number" placeholder="dan">
+						<input type="number" placeholder="gacha">
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+	<section class="ads-navbar">
+		<div class="container">
+			<div class="ads-navbar__items">
+				<div class="navbar-subtitle__button">
+					<button class="button">
+						<h5>
+							Hamma e'lonlar
+						</h5>
+					</button>
+					<button>
+						<h5>
+							Biznes
+						</h5>
+					</button>
+					<button>
+						<h5>
+							Jismoniy shaxs
+						</h5>
+					</button>
+				</div>
+				<div class="navbar-filter__disabled">
+					<button>
+						<h5>
+							Filterlarni o'chirish
+						</h5>
+					</button>
+				</div>
+			</div>
+		</div>
+		<hr>
+	</section>
+
+	<section class="ads">
+		<div class="container">
+			<div class="ads-title">
+				<h3>Biz 1,000 dan ortiq e'lon topdik</h3>
+			</div>
+			<div class="ad-items">
+				<div class="ad-item">
+					<img src="images/ad-1.avif" alt="ad1">
+					<i class="fa-sharp fa-regular fa-heart"></i>
+					<p class="ad-title">
+						Kvartira
+					</p>
+					<p class="ad-info">
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, eum?
+					</p>
+					<p class="ad-icon">
+						<i class="fa-regular fa-eye"> 13</i>
+					</p>
+				</div>
+			</div>
+
+			<div class="ad-items">
+				<div class="ad-item">
+					<img src="{% static 'images/ad-1.avif' %}" alt="ad1">
+					<i class="fa-sharp fa-regular fa-heart"></i>
+					<p class="ad-title">
+						Kvartira
+					</p>
+					<p class="ad-info">
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, eum?
+					</p>
+					<p class="ad-icon">
+						<i class="fa-regular fa-eye"> 100</i>
+					</p>
+				</div>
+			</div>
+
+			<div class="ad-items">
+				<div class="ad-item">
+					<i class="fa-sharp fa-regular fa-heart"></i>
+					<img src="{% static 'images/ad-2.jpg' %}" alt="ad1">
+					<p class="ad-title">
+						Kvartira
+					</p>
+					<p class="ad-info">
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, eum?
+					</p>
+					<p class="ad-icon">
+						<i class="fa-regular fa-eye"> 113</i>
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+
+</html>
